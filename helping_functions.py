@@ -7,6 +7,7 @@ import cv2 as cv
 import joblib
 from tensorflow.keras.models import load_model
 import keras_model as km
+import sklearn
 
 
 path_pipe = 'assets/models/nn_pca_3_pipeline.sav'

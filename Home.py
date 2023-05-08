@@ -4,6 +4,7 @@ from numpy import asarray
 import numpy as np
 import pandas as pd
 from helping_functions import load_models, crop
+import sklearn
 
 st.set_page_config(layout='wide')
 
