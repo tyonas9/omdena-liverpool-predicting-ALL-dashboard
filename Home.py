@@ -5,6 +5,7 @@ import numpy as np
 import pandas as pd
 from helping_functions import load_models, crop
 import sklearn
+import scikeras
 
 st.set_page_config(layout='wide')
 

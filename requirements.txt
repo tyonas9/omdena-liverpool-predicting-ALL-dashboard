@@ -7,3 +7,4 @@ scikit-image
 streamlit==1.22.0
 tensorflow
 scikit-learn
+scikeras
