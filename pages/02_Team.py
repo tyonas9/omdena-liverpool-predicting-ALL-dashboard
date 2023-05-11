@@ -77,6 +77,8 @@ with col1:
         fa_li, '[www.linkedin.com/in/wallace-g-ferreira-69065910/](https://www.linkedin.com/in/wallace-g-ferreira-69065910/ )',
         unsafe_allow_html=True
     )
+    st.write("\n")
+    st.write("\n")
 with col2:
     neville = Image.open('assets/images/neville.jpg')
     st.image(neville)
@@ -88,6 +90,9 @@ with col2:
         '[www.linkedin.com/in/nevillemathew/](https://www.linkedin.com/in/nevillemathew/)',
         unsafe_allow_html=True
     )
+    st.write("\n")
+    st.write("\n")
+    st.write("\n")
 with col3:
     soumya = Image.open('assets/images/soumya.jpg')
     st.image(soumya)
@@ -108,6 +113,30 @@ with col4:
     st.write(
         fa_li,
         '[www.linkedin.com/in/varun-yadav/](https://www.linkedin.com/in/varun-yadav/)',
+        unsafe_allow_html=True
+    )
+    
+with col1:
+    darshan = Image.open('assets/images/darshan.jpg')
+    st.image(darshan)
+    st.header("Darshan Pai")
+    st.subheader("Team Member")
+    st.write("I am a software engineer with expertise in image analysis and visualization, focused on applied research. My skills include programming languages such as C++, Java, and Python, as well as libraries like OpenGL and VTK. I have experience in scientific visualization, computer graphics, and image analysis, with knowledge of artificial intelligence and deep learning. Some of my projects include virtual colonoscopy, brain mapping, and neuroimaging analysis.")
+    st.write(
+        fa_li,
+        '[https://www.linkedin.com/in/darshanpai/](https://www.linkedin.com/in/darshanpai/)',
+        unsafe_allow_html=True
+    )
+    
+with col2:
+    dounia = Image.open("assets/images/dounia.jpg")
+    st.image(dounia)
+    st.header("Dounia")
+    st.subheader("Team Member")
+    st.write("I'm an engineer in data engineering and business intelligence, graduated from the National Institute of Statistics and Applied Economics (INSEA) of Rabat. I'm passionate about Machine Learning, Artificial intelligence, Data science, Mathematics and programming.")
+    st.write(
+        fa_li,
+        '[https://www.linkedin.com/in/dounia-sadiky-56a729204/](https://www.linkedin.com/in/dounia-sadiky-56a729204/)',
         unsafe_allow_html=True
     )
 
