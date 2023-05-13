@@ -49,12 +49,28 @@ with col1:
 with col2:
     after_aug = Image.open('assets/images/after_aug.png')
     st.image(after_aug, width=290)
-    st.write("This is the confusion matrix after image augmentation, as you can see the performance of the model predicting the hem class has improved.")
+    st.write("This is the confusion matrix after image augmentation, as you can see the performance of the model predicting the hem class has improved")
 with col3:
     after_voting = Image.open('assets/images/after_voting.png')
     st.image(after_voting, width=305)
-    st.write("This is the cofusion matrix of a voting classifier, as you can see the voting classifier improved the performance of the model predicting the minority class even more.")
+    st.write("This is the cofusion matrix of a voting classifier, as you can see the voting classifier improved the performance of the model predicting the minority class even more")
 
+with col1:
+    st.write("\n")
+    st.write("\n")
+    st.write("\n")
+    simple_nn = Image.open('assets/images/simple_nn.png')
+    st.image(simple_nn)
+
+with col2:
+    st.write("\n")
+    st.write("\n")
+    st.write("\n")
+    st.write("\n")
+    st.write("\n")
+    st.write("\n")
+    st.write("This is the confusion matrix of a simple neural network that was trained on the data. It also shows how using even a simple neural network outperforms the traditional machine learning models")
+    
 st.subheader("Experimentations")
 experiments = Image.open("assets/images/experimentations.png")
 st.image(experiments)

@@ -25,15 +25,13 @@ col1,col2 = st.columns(2)
 with col1:
     #ask user to upload image
     file = st.file_uploader("Upload an image ", type=['bmp','png','jpg'])
-    url = "https://discuss.streamlit.io/t/streamlit-hyperlink/29831"
-    st.markdown("Download [example images](%s)" % url) 
+    url = "https://github.com/liskibruh/omdena-liverpool-predicting-ALL-dashboard/blob/main/assets/images/example_img1.bmp"
+    st.markdown("Download [example image](%s)" % url) 
 
 with col2:
+    flowchart = Image.open('assets/images/flowchart2.png')
+    st.image(flowchart)
     
-    st.subheader("Instructions for using the app")
-    st.write("1. Upload Photo")
-    st.write("2. Wait for the result")
-   
 if file is not None:
     image = Image.open(file) #open uploaded image
     image_temp = asarray(image)
