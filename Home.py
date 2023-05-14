@@ -15,19 +15,16 @@ def load_css():
     css_file.close()
 load_css()
 
-    
-#st.title('Image Classifier')
-
 with st.spinner("Loading Models...."):
     vgg_model, classifier = load_models()
-
+    
 col1,col2 = st.columns(2)
 with col1:
     #ask user to upload image
     file = st.file_uploader("Upload an image ", type=['bmp','png','jpg'])
     url = "https://github.com/liskibruh/omdena-liverpool-predicting-ALL-dashboard/blob/main/assets/images/example_img1.bmp"
     st.markdown("Download [example image](%s)" % url) 
-
+    
 with col2:
     flowchart = Image.open('assets/images/flowchart2.png')
     st.image(flowchart)
@@ -48,19 +45,29 @@ if file is not None:
         st.image(img_preprocessed)
         st.write("Image dimensions:",img_preprocessed.shape)
         st.write("Max pixel value",np.amax(img_preprocessed))
-
-    with st.spinner("Extracting Features.."):
-        features = vgg_model.predict(img_preprocessed)
-        feats = features.reshape(features.shape[0], -1)
-        feats_df = pd.DataFrame(feats)
-        st.subheader("Extracted Features")
-        st.write(feats_df.head())
+        
+if file is not None:
+    if 'feats_df' not in st.session_state:
+        st.session_state['feats_df']=None
+        
+    if st.button("Extract Features", key=1):
+        with st.spinner("Extracting Features.."):
+            features = vgg_model.predict(img_preprocessed)
+            feats = features.reshape(features.shape[0], -1)
+            st.session_state['feats_df'] = pd.DataFrame(feats)
+            st.subheader("Extracted Features")
+            st.write(st.session_state['feats_df'].head())
             
-    with st.spinner("Classifying.. "):
-        y_pred = classifier.predict(feats_df)
-        if y_pred[0]==1:
-            st.subheader("Image Classified as")
-            st.metric(label="",value="ALL")  
-        elif y_pred[0]==0:
-            st.subheader("Image Classified as")
-            st.metric(label="",value="Hem")
+    if st.button("Classify Image", key=2): 
+        st.write(st.session_state['feats_df'].head())
+        if st.session_state['feats_df'] is None:
+            st.warning("Please extract features first.")
+        else:
+            with st.spinner("Classifying.. "):
+                y_pred = classifier.predict(st.session_state['feats_df'])
+                if y_pred[0]==1:
+                    st.subheader("Image Classified as")
+                    st.metric(label="",value="ALL")  
+                elif y_pred[0]==0:
+                    st.subheader("Image Classified as")
+                    st.metric(label="",value="Hem")
