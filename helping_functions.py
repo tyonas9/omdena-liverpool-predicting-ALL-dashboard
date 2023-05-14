@@ -10,6 +10,10 @@ import keras_model as km
 import sklearn
 import scikeras
 
+def load_css():
+    css_file = open('assets/style.css', 'r')
+    st.markdown(f'<style>{css_file.read()}</style>', unsafe_allow_html=True)
+    css_file.close()
 
 path_pipe = 'assets/models/nn_pca_3_pipeline.sav'
 path_keras = 'assets/models/nn_pca_3_keras.h5'

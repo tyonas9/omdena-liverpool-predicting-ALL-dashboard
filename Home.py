@@ -3,16 +3,11 @@ from PIL import Image
 from numpy import asarray
 import numpy as np
 import pandas as pd
-from helping_functions import load_models, crop
+from helping_functions import load_models, crop, load_css
 import sklearn
 import scikeras
 
 st.set_page_config(layout='wide')
-
-def load_css():
-    css_file = open('assets/style.css', 'r')
-    st.markdown(f'<style>{css_file.read()}</style>', unsafe_allow_html=True)
-    css_file.close()
 load_css()
 
 with st.spinner("Loading Models...."):

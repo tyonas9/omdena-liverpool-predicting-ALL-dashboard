@@ -1,12 +1,8 @@
 import streamlit as st
 from PIL import Image
+from helping_functions import load_css
 
 st.set_page_config(layout='wide')
-
-def load_css():
-    css_file = open('assets/style.css', 'r')
-    st.markdown(f'<style>{css_file.read()}</style>', unsafe_allow_html=True)
-    css_file.close()
 load_css()
 
 st.markdown('''
