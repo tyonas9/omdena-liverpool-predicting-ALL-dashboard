@@ -125,9 +125,11 @@ with col3:
         to solve real-world problems and make a positive impact on society.")
     st.write(
         fa_li,
-        '[www.linkedin.com/in/saleh-ahmed-rony](https://www.linkedin.com/in/saleh-ahmed-rony-135493156/)',
+        '[www.linkedin.com/in/soumyardas90/](https://www.linkedin.com/in/soumyardas90/)',
         unsafe_allow_html=True
     )
+    st.write("\n")
+    
 with col4:
     varun = Image.open('assets/images/varun.jpg')
     st.image(varun)
@@ -142,6 +144,15 @@ with col4:
         '[www.linkedin.com/in/varun-yadav/](https://www.linkedin.com/in/varun-yadav/)',
         unsafe_allow_html=True
     )
+    st.write("\n")
+    st.write("\n")
+    st.write("\n")
+    st.write("\n")
+    st.write("\n")
+    st.write("\n")
+    st.write("\n")
+    st.write("\n")
+    st.write("\n")
     
 with col1:
     darshan = Image.open('assets/images/darshan.jpg')
@@ -173,6 +184,53 @@ with col2:
         '[https://www.linkedin.com/in/dounia-sadiky-56a729204/](https://www.linkedin.com/in/dounia-sadiky-56a729204/)',
         unsafe_allow_html=True
     )
+
+with col3:
+    eva = Image.open("assets/images/eva.jpeg")
+    st.image(eva)
+    st.header("Eva")
+    st.subheader("Team Member")
+    st.write("Sr. Software Engineer, excited to keep learning with passion about all things data, \
+        technology, architecture, and machine learning. ")
+    st.write(
+        fa_li,
+        '[https://www.linkedin.com/in/eva-draganova/](https://www.linkedin.com/in/eva-draganova/)',
+        unsafe_allow_html=True
+    )     
+    
+with col4:
+    ganesh = Image.open("assets/images/ganesh.jpeg")
+    st.image(ganesh)
+    st.header("Ganesh")
+    st.subheader("Team Member")
+    st.write("I'm a data scientist with a passion for using data to solve complex business problems. \
+        When I'm not exploring data, you can find me on the volleyball court, staying active \
+        through exercise, and prioritizing my health. I believe that a healthy mind and body are \
+        crucial for success, both in and out of the workplace. With over 3 years of experience in \
+        data science and machine learning, I'm dedicated to staying at the forefront of the \
+        industry and using my skills to make a positive impact.")
+    st.write(
+        fa_li,
+        '[https://www.linkedin.com/in/ganeshjambhrunkar15/](https://www.linkedin.com/in/ganeshjambhrunkar15/)',
+        unsafe_allow_html=True
+    )    
+
+with col1:
+    nabeel = Image.open("assets/images/nabeel.jpeg")
+    st.image(nabeel)
+    st.header("Nabeel")
+    st.subheader("Team Member")
+    st.write("Highly motivated and results-driven AI and ML enthusiast, I am deeply passionate about \
+        exploring the latest advancements in this field to solve complex business problems. With a\
+        proven track record of designing and developing cutting-edge AI and ML algorithms, I \
+        possess the technical expertise and creativity needed to bring innovative solutions \
+        to life. My strengths lie in my ability to analyze complex data sets, develop predictive models, \
+        and deploy these models at scale to drive measurable business results. ")
+    st.write(
+        fa_li,
+        '[https://www.linkedin.com/in/nabeel-samra-008486219/](https://www.linkedin.com/in/nabeel-samra-008486219/)',
+        unsafe_allow_html=True
+    ) 
 
 with col3:
     st.write(' ')
