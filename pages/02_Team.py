@@ -220,8 +220,6 @@ with col3:
     st.write("\n")
     st.write("\n")
     st.write("\n")
-    st.write("\n") 
-    st.write("\n")
     
 with col4:
     ganesh = Image.open("assets/images/ganesh.jpeg")
