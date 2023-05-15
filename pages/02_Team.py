@@ -191,6 +191,8 @@ with col2:
     st.write("\n")
     st.write("\n") 
     st.write("\n")
+    st.write("\n") 
+    st.write("\n")
 
 
 with col3:
