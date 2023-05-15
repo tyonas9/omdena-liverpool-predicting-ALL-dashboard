@@ -184,6 +184,14 @@ with col2:
         '[https://www.linkedin.com/in/dounia-sadiky-56a729204/](https://www.linkedin.com/in/dounia-sadiky-56a729204/)',
         unsafe_allow_html=True
     )
+    st.write("\n")
+    st.write("\n")
+    st.write("\n")
+    st.write("\n")
+    st.write("\n")
+    st.write("\n") 
+    st.write("\n")
+
 
 with col3:
     eva = Image.open("assets/images/eva.jpeg")
@@ -196,7 +204,19 @@ with col3:
         fa_li,
         '[https://www.linkedin.com/in/eva-draganova/](https://www.linkedin.com/in/eva-draganova/)',
         unsafe_allow_html=True
-    )     
+    )  
+    st.write("\n")
+    st.write("\n")
+    st.write("\n")
+    st.write("\n")
+    st.write("\n")
+    st.write("\n") 
+    st.write("\n")
+    st.write("\n")
+    st.write("\n")
+    st.write("\n")
+    st.write("\n")
+    st.write("\n")
     
 with col4:
     ganesh = Image.open("assets/images/ganesh.jpeg")
@@ -229,6 +249,37 @@ with col1:
     st.write(
         fa_li,
         '[https://www.linkedin.com/in/nabeel-samra-008486219/](https://www.linkedin.com/in/nabeel-samra-008486219/)',
+        unsafe_allow_html=True
+    ) 
+
+with col2:
+    imed = Image.open("assets/images/imed.jpg")
+    st.image(imed)
+    st.header("Imed-Eddine")
+    st.subheader("Team Member")
+    st.write("As a PhD student in AI, I specialize in machine/deep learning, computer vision and \
+        data analysis. My research mainly focuses on medical image analysis, and I have published \
+        several conference papers in this domain. I am proficient in  Python and C/C++ languages, \
+        as well as TensorFlow. Additionally, I am familiar with the Unix command line and bash \
+        scripting. As an ambassador of OneAPI at Intel, I developed a deep understanding of OneAPI \
+        and OpenVINO toolkits. I am motivated about delivering complex projects and am always \
+        seeking new challenges to apply my skills. Currently, I am seeking a job or internship to \
+        gain hands-on experience in applying cutting-edge technologies to real-world problems. ")
+    st.write(
+        fa_li,
+        '[https://www.linkedin.com/in/imed-eddine-haouli/](https://www.linkedin.com/in/imed-eddine-haouli/)',
+        unsafe_allow_html=True
+    ) 
+
+with col3:
+    kiran = Image.open("assets/images/kiran.jpeg")
+    st.image(kiran)
+    st.header("Kiran Kumar")
+    st.subheader("Team Member")
+    st.write("Innovator, Team player and Problem solver")
+    st.write(
+        fa_li,
+        '[https://www.linkedin.com/in/kiran-kumar-k-v/](https://www.linkedin.com/in/kiran-kumar-k-v/)',
         unsafe_allow_html=True
     ) 
 
